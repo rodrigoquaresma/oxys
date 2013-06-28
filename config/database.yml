@@ -3,8 +3,8 @@ development:
   database: db/oxysdb_development
   pool: 5
   timeout: 5000
-  username:
-  password:
+  host: localhost
+  username: user
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -14,13 +14,13 @@ test:
   database: db/oxysdb_test
   pool: 5
   timeout: 5000
-  username:
-  password:
+  host: localhost
+  username: user
 
 production:
   adapter: postgresql
   database: db/oxysdb_production
   pool: 5
   timeout: 5000
-  username:
-  password:
+  host: localhost
+  username: user
