@@ -11,11 +11,11 @@
 // // -------------------------
 // $black:                 #000 !default;
 // $grayDarker:            #222 !default;
-$grayDark:              #463a33;            //actually brown...
+// $grayDark:              #463a33;            //actually brown...
 // $gray:                  #555 !default;
 // $grayLight:             #999 !default;
 // $grayLighter:           #eee !default;
-$white:                 #fff !default;
+// $white:                 #fff !default;
 
 
 // // Accent colors
@@ -23,7 +23,7 @@ $white:                 #fff !default;
 // $blue:                  #049cdb !default;
 // $blueDark:              #0064cd !default;
 // $green:                 #46a546 !default;
-$red:                   #b53b1f;
+// $red:                   #b53b1f;
 // $yellow:                #ffc40d !default;
 // $orange:                #f89406 !default;
 // $pink:                  #c3325f !default;
@@ -31,14 +31,14 @@ $red:                   #b53b1f;
 
 // // Scaffolding
 // // -------------------------
-$bodyBackground:        #f3f2eb;
-$textColor:             $grayDark;
+// $bodyBackground:        #f3f2eb;
+// $textColor:             $grayDark;
 
 
 // // Links
 // // -------------------------
-$linkColor:             #5f7076;
-$linkColorHover:        darken($linkColor, 15%) !default;
+// $linkColor:             #5f7076;
+// $linkColorHover:        darken($linkColor, 15%) !default;
 
 
 // // Typography
@@ -47,7 +47,7 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 // $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 // $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
-$baseFontSize:          16px;
+// $baseFontSize:          16px;
 // $baseFontFamily:        $sansFontFamily !default;
 // $baseLineHeight:        20px !default;
 // $altFontFamily:         $serifFontFamily !default;
@@ -112,7 +112,7 @@ $baseFontSize:          16px;
 // $inputBorder:                   #ccc !default;
 // $inputBorderRadius:             $baseBorderRadius !default;
 // $inputDisabledBackground:       $grayLighter !default;
-$formActionsBackground:         transparent;
+// $formActionsBackground:         transparent;
 // $inputHeight:                   $baseLineHeight + 10px !default; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
@@ -123,7 +123,7 @@ $formActionsBackground:         transparent;
 // $dropdownDividerTop:            #e5e5e5 !default;
 // $dropdownDividerBottom:         $white !default;
 
-$dropdownLinkColor:             $grayDark !default;
+// $dropdownLinkColor:             $grayDark !default;
 // $dropdownLinkColorHover:        $white !default;
 // $dropdownLinkColorActive:       $white !default;
 
@@ -184,7 +184,7 @@ $dropdownLinkColor:             $grayDark !default;
 
 // $navbarText:                      #777 !default;
 // $navbarLinkColor:                 #777 !default;
-$navbarLinkColorHover:            $grayDark !default;
+// $navbarLinkColorHover:            $grayDark !default;
 // $navbarLinkColorActive:           $gray !default;
 // $navbarLinkBackgroundHover:       transparent !default;
 // $navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
