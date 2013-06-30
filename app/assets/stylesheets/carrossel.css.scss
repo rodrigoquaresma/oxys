@@ -93,8 +93,8 @@
     .carousel-caption {
       background-color: transparent;
       position: static;
-      max-width: 900px;
-      padding: 0 20px;
+      max-width: 780px;
+      padding: 0 80px;
       margin-top: 110px;
     }
 	
@@ -214,7 +214,7 @@
         margin-right: -20px;
       }
       .carousel .container {
-
+		  width:auto;
       }
       .carousel .item {
         height: 300px;

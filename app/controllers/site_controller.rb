@@ -2,8 +2,8 @@
 class SiteController < ApplicationController
 
   def home
-    @title = "Software de Marketing Digital"
-    render "home", :layout => "site/index"
+    @title = "oxys design de experiencia"
+    render "index", :layout => "index"
   end
 
 end
