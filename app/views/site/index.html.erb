@@ -6,9 +6,12 @@
 </head>
 <body>
 
+<%= yield :content %>
+
 <%= render :partial => 'layouts/carrossel' %>
 <%= render :partial => 'layouts/container' %>
 
+<%= yield :footer %>
 </body>
 </html>
 

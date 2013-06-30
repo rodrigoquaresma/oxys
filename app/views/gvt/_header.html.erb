@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg width="1280" height="720" viewBox="0 0 1280 720"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svg="http://www.w3.org/2000/svg" 
+    image-rendering="optimizeSpeed">
+
+	<%= stylesheet_link_tag    "gvt/styles", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	
+	<defs>
+		<%= render :partial => 'gvt/defs' %>
+	</defs>
+	
+	<% content_for :gvt_footer do %>
+		<%= render :partial => 'gvt/footer' %>
+	<% end %>

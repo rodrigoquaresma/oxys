@@ -56,5 +56,5 @@ Oxys::Application.routes.draw do
   
   root :to => "site#index"
   
-  get 'gvt/minhas-ligacoes' => 'gvt#minhas-ligacoes', as: :gvt_minhas_ligacoes
+  get 'gvt/minhas-ligacoes' => 'gvt#minhas_ligacoes', as: :gvt_minhas_ligacoes
 end
