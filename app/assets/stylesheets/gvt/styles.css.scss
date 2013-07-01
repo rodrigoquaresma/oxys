@@ -1,6 +1,8 @@
 /*sizes*/
-.ggbrlg, .ggmblg, .ggmdlg, .ggdklg,
-.ggbrbd, .ggmbbd, .ggmdbd, .ggdkbd {font-size:60px;}
+
+[class^="gg"] {
+	font-size: 60px;
+}
 
 .gmbrlg, .gmmblg, .gmmdlg, .gmdklg,
 .gmbrbd, .gmmbbd, .gmmdbd, .gmdkbd {font-size:40px;}

@@ -54,7 +54,16 @@ Oxys::Application.routes.draw do
   #     resources :products
   #   end
   
-  root :to => "site#index"
-  
+  root 'site#index'
+    
   get 'gvt/minhas-ligacoes' => 'gvt#minhas_ligacoes', as: :gvt_minhas_ligacoes
+  
+  resources :gvt, :defaults => {:format => "svg"} do
+    resource :index
+  end
+#   
+#   resources :projects do
+#     resource :release_burn_down_chart  
+#   end 
+  
 end
