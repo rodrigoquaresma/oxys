@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
-    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<g id="background" transform="translate(0 0)">
+	<image id="background" x="0" y="0" width="1280" height="720" <%= image_gvt('video-b.jpg') %> />
+</g>
 
-<svg width="1280" height="720" viewBox="0 0 1280 720"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:svg="http://www.w3.org/2000/svg" 
-    image-rendering="optimizeSpeed">
+<rect	x='48'	y='120'	width='464'	height='600'	fill-opacity='0.8' fill="url(#ggrydwdk)" />
 
-	<%= stylesheet_link_tag    "gvt/styles", media: "all", "data-turbolinks-track" => true %>
-	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-	
-	<defs>
-		<%= render :partial => 'gvt/defs' %>
-	</defs>
-	
-	<% content_for :gvt_footer do %>
-		<%= render :partial => 'gvt/footer' %>
-	<% end %>
+<rect	x='0'	y='28'	width='1280' height='08'	fill='url(#shup)' />
+<rect	x='0'	y='36'	width='1280' height='84'	fill='url(#ggryupdk)' fill-opacity='0.8' />
+<rect	x='0'	y='120'	width='1280' height='08'	fill='url(#shdw)' />
+
+<g id="HEADER"  style="text-overflow:ellipsis;">
+	<image id="HEADER_Icon" x="45" y="34" width="80" height="80" <%= image_gvt('Header_Services_Icon.png') %> />
+	<text id="HEADER_Path" x="128" y="90" width="800" class="mgbrbd">Aplicativos</text>
+	<circle cx="332" cy="82" r="6" fill="#e5e5e5" />
+	<text id="HEADER_Path" x="348" y="90" width="800" class="mgbrbd">Minhas Ligações</text>
+	<use xlink:href="#TVLOGO_Base"/>
+</g>

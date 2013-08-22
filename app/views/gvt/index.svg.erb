@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
     "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-<svg width="1280" height="720" viewBox="0 0 1280 720"
+<svg width="100%" height="100%" viewBox="0 0 1280 720"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -13,69 +13,52 @@
 
 	<defs>
 		<%= render :partial => 'gvt/defs' %>
-		<%= render :partial => 'gvt/minhas_ligacoes/defs' %>
-
+		<%= yield :defs %>
 		<style type="text/css" >
 			<%= render :partial => 'gvt/styles' %>
+			<%= yield :styles %>
 		</style>
 	</defs>
 
-	<g id="background" transform="translate(0 0)">
-		<image id="background" x="0" y="0" width="1280" height="720" xlink:href="/assets/gvt/video-b.jpg"/>
-	</g>
-	
-	<rect	x='48'	y='120'	width='464'	height='600'	fill-opacity='0.8' fill="url(#ggrydwdk)" />
+	<%= render :partial => 'gvt/header' %>
+	<%= yield :header %>
 
-	<rect	x='0'	y='28'	width='1280' height='8'	fill='url(#shup)' />
-	<rect	x='0'	y='36'	width='1280' height='84'	fill='url(#ggryupdk)' fill-opacity='0.8' />
-	<rect	x='0'	y='120'	width='1280' height='8'	fill='url(#shdw)' />
-	
-	
-	<g id="HEADER"  style="text-overflow:ellipsis;">
-		<image id="HEADER_Icon" x="45" y="34" width="80" height="80" xlink:href="images/Header_Services_Icon.png"/>
-		<text id="HEADER_Path" x="128" y="90" width="800" class="mgbrbd">Aplicativos</text>
-		<circle cx="332" cy="82" r="6" fill="#e5e5e5" />
-		<text id="HEADER_Path" x="348" y="90" width="800" class="mgbrbd">Minhas Ligações</text>
-		<use xlink:href="#TVLOGO_Base"/>
-	</g>
-	
-	<g	transform="translate(48 174)">
-		<textArea	x="32"	y="-3"	width="400" class="gpbrbd">
-		Minhas Ligações
-		</textArea>
-		<textArea	x="32"	y="64"	width="400" class="mmbrbd">
-		Com o Minhas Ligações, você pode visualizar as chamadas recebidas, realizadas e perdidas do seu telefone da GVT na sua TV.
-		</textArea>
-		<textArea	x="32"	y="196"	width="400" class="mmbrbd">
-		Digite a senha de bloqueio para visualizar o registro.
-		</textArea>
-	</g>
-		
-	
-	<g id="senha" transform="translate(48 464)">
-	
-		<rect	x='0'	y='0'	width='464' height='96'	fill='url(#g160upbr)' fill-opacity="0.8" />
-		
-		<g id="senha" transform="translate(88 15)">
-			<rect	x="0"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="url(#ggryupdk)"	fill-opacity="1" rx="6" ry="6" />
-			<text	x="33"	y="66"	width="66"	text-anchor="middle" class="ggmbbd">*</text>
-			<rect	x="74"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="#e5e5e5"			fill-opacity="1" rx="6" ry="6" />
-			<text	x="81"	y="70"	width="66"	text-anchor="middle" class="ggmbbd"></text>
-			<rect	x="148"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="url(#ggrydwbr)"	fill-opacity="0.8" rx="6" ry="6" />
-			<text	x="181"	y="70"	width="66"	text-anchor="middle" class="ggmbbd"></text>
-			<rect	x="222"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="url(#ggrydwbr)"	fill-opacity="0.8" rx="6" ry="6" />
-			<text	x="255"	y="70"	width="66"	text-anchor="middle" class="ggmbbd"></text>
-		</g>
-		
-	</g>
-	
-	<!--rodape-->
-	<g id="rodape" transform="translate(48 640)">
-		<!--<rect	x='0'	y='0'	width='464' height='80'	fill='#000' fill-opacity="0.7" />-->
-		<text	x="448"	y="32"	width="432" text-anchor="end" class="pmbrlg"></text>
-		<rect	x='0'	y='-520'	width='8'	height='600'	fill='url(#shrg)' />
-		<rect	x='456'	y='-520'	width='8'	height='600'	fill='url(#shlf)' />
-	</g>
+<g	transform="translate(48 174)">
+	<textArea	x="32"	y="-3"	width="400" class="gpbrbd">
+	Minhas Ligações
+	</textArea>
+	<textArea	x="32"	y="64"	width="400" class="mmbrbd">
+	Com o Minhas Ligações, você pode visualizar as chamadas recebidas, realizadas e perdidas do seu telefone da GVT na sua TV.
+	</textArea>
+	<textArea	x="32"	y="196"	width="400" class="mmbrbd">
+	Digite a senha de bloqueio para visualizar o registro.
+	</textArea>
+</g>
 	
 
-</svg>
+<g id="senha" transform="translate(48 464)">
+
+	<rect	x='0'	y='0'	width='464' height='96'	fill='url(#g160upbr)' fill-opacity="0.8" />
+	
+	<g id="senha" transform="translate(88 15)">
+		<rect	x="0"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="url(#ggryupdk)"	fill-opacity="1" rx="6" ry="6" />
+		<text	x="33"	y="66"	width="66"	text-anchor="middle" class="ggmbbd">*</text>
+		<rect	x="74"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="#e5e5e5"			fill-opacity="1" rx="6" ry="6" />
+		<text	x="81"	y="70"	width="66"	text-anchor="middle" class="ggmbbd"></text>
+		<rect	x="148"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="url(#ggrydwbr)"	fill-opacity="0.8" rx="6" ry="6" />
+		<text	x="181"	y="70"	width="66"	text-anchor="middle" class="ggmbbd"></text>
+		<rect	x="222"	y="0"	width="66"	height="66" stroke-width="2" stroke="url(#ggryupdk)"	fill="url(#ggrydwbr)"	fill-opacity="0.8" rx="6" ry="6" />
+		<text	x="255"	y="70"	width="66"	text-anchor="middle" class="ggmbbd"></text>
+	</g>
+	
+</g>
+
+<!--rodape-->
+<g id="rodape" transform="translate(48 640)">
+	<text	x="448"	y="32"	width="432" text-anchor="end" class="pmbrlg"></text>
+	<rect	x='0'	y='-520'	width='8'	height='600'	fill='url(#shrg)' />
+	<rect	x='456'	y='-520'	width='8'	height='600'	fill='url(#shlf)' />
+</g>
+
+<%= yield :footer %>
+<%= render :partial => 'gvt/footer' %>
