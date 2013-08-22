@@ -13,7 +13,8 @@ gem 'rasem'
 gem 'sass-rails', '~> 4.0.0'
 
 # bootstrap
-gem 'bootstrap-sass', '~> 2.3.2'
+# gem 'bootstrap-sass', '~> 2.3.2.1'
+gem 'bootstrap-sass', :git => 'git://github.com/thomas-mcdonald/bootstrap-sass.git', :branch => '3'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -37,6 +38,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'bootstrap-sass-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
