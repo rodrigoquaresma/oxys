@@ -39,11 +39,59 @@
 		#container > header div.wrapper figure img,
 		#container > header div.wrapper div.figure img {margin:0;padding:0;width:100%;}
 		#container > header div.wrapper hgroup,
-		#container > header div.wrapper div.hgroup {width:100%;}
+		#container > header div.wrapper div.hgroup {width:100%;padding:20px 0;}
 		#container > header div.wrapper hgroup h1,
-		#container > header div.wrapper div.hgroup h1 {font-size:52px;line-height:0.9em;margin:0;padding:3%;font-weight:bold;}
+		#container > header div.wrapper div.hgroup h1 {font-size:52px;line-height:0.9em;margin:0;padding:0 30px 10px;font-weight:bold;}
 		#container > header div.wrapper hgroup h2,
-		#container > header div.wrapper div.hgroup h2 {font-size:20px;line-height:1.1em;margin:0;padding:3%;font-weight:normal;}		
+		#container > header div.wrapper div.hgroup h2 {font-size:20px;line-height:1.1em;margin:0;padding:0 30px 0;font-weight:normal;}		
+		
+		#container > section {padding:0;}
+		#container section div#content.left {width:100%;margin:0;}
+		#container section div#content.left figure,
+		#container section div#content.left div.figure {margin:0;}
+		#container section div#content.left figure img,
+		#container section div#content.left div.figure img {width:100%;}
+		#container section div#content.left ul { list-style:none;padding:30px 30px 15px;}
+		#container section div#content.left ul li { margin:0 0 15px 0; }
+		#container section div#content.left ul li h3 { font-size:20px; padding:0 0 10px 0;}
+		#container section div#content.left ul li p { font-size:16px; }
+		
+		#conversion.right {margin:0;width:100%; }
+		
+		#container > section div.socialfloating { display:none; }
+		
+		/*area de conversao*/
+		#conversion header {display:block;padding:30px 30px 20px;margin:0;}
+		#conversion header h2 { display:block; padding:0; margin:0 0 10px 0; font-size:20px; font-weight:bold; text-align:left; }
+		#conversion header p { display:block; padding:0; margin:0 0 10px 0; font-size:16px; line-height:1.2em; }
+
+		#conversion section {display:block;padding:30px 30px 20px; margin:0;}
+		#conversion section p {display:block; padding:0 0 20px 0; margin:0; font-size:12px; line-height:1em; }
+		#conversion section p.notice {font-size:12px;}
+		#conversion section form {}
+		#conversion section form div.field {padding:0 0 12px 0;margin:0;}
+		#conversion section form div.field div { margin:0 0 5px 0; clear:both;width:100%;}
+		#conversion section form input,
+		#conversion section form select,
+		#conversion section form textarea {vertical-align:middle;font-size:18px;padding:3px 2%;margin:0;width:96%;height:28px;line-height:20px;display:inline-block;}
+		#conversion section form label {display:block;padding:0 0 5px 0; margin:0;}
+		#conversion section form select {width:100%;height:36px;line-height:36px;}
+		#conversion section form input {}
+		#conversion section form textarea {height:104px;}
+		
+		#conversion section form input[type=radio],
+		#conversion section form input[type=checkbox] { float: left; display: block; width: 28px; margin: 0; }
+		
+		#conversion section form input[type=radio] {height:28px;}
+		
+		#conversion section form input[type=radio] + label,
+		#conversion section form input[type=radio] + label + label,
+		#conversion section form input[type=checkbox] + label {width: auto;display: block;padding: 5px 0 4px 28px;}
+		
+		#conversion section form label.error { display:none !important; }
+		#conversion section form input.error,
+		#conversion section form textarea.error,
+		#conversion section form select.error { background:#FFDDDD; }
 	}
 	@media screen and (min-width: 760px) {
 		.wrapper { width:760px; margin:0 auto; overflow:hidden; position:relative; }
@@ -59,67 +107,119 @@
 		#container > header div.wrapper div.hgroup h1 {display:block;*position:relative;top:-50%;font-size:52px;line-height:0.9em;margin:0;padding:0 0 1% 3%;font-weight:bold;}
 		#container > header div.wrapper hgroup h2,
 		#container > header div.wrapper div.hgroup h2 {display:block;*position:relative;top:-50%;font-size:20px;line-height:1.1em;margin:0;padding:0 0 1% 3%;font-weight:normal;}
+	
+		#container section div#content.left figure,
+		#container section div#content.left div.figure {margin:5% 10% 0;}
+		
+		#container section div#content.left ul { list-style:none;padding:5% 10% 0;}
+		
+		#conversion.right {margin:5% 10% 10%;width:80%; }
+		
+		
+		
+		/*border radius*/
+		#conversion {
+		-webkit-border-radius:15px;
+		-moz-border-radius:15px;
+		border-radius:15px;
+		}
+		#conversion header {
+		-webkit-border-radius:15px 15px 0px 0px;
+		-moz-border-radius:15px 15px 0px 0px;
+		border-radius:15px 15px 0px 0px;
+		}
+		#conversion section {
+		-webkit-border-radius:0px 0px 15px 15px;
+		-moz-border-radius:0px 0px 15px 15px;
+		border-radius:0px 0px 15px 15px;
+		}
+	
+	
 	}
 	@media screen and (min-width: 908px) {
 		.wrapper { width:908px; margin:0 auto; overflow:hidden; position:relative; }
 		#container > header {padding:16px 0;}
-		#container > header div.wrapper { overflow:hidden; position:relative;display:table;}
-		#container > header div.wrapper figure,
-		#container > header div.wrapper div.figure {display:table-cell;*position:absolute;top:50%;width:33.33333%;vertical-align:middle;}
-		#container > header div.wrapper figure img,
-		#container > header div.wrapper div.figure img {display:block;*position:relative;top:-50%;margin:0;padding:0;width:100%;}
-		#container > header div.wrapper hgroup,
-		#container > header div.wrapper div.hgroup { display:table-cell;*position:absolute;top:50%;width:66.66666%;text-align:left;vertical-align:middle;}
-		#container > header div.wrapper hgroup h1,
-		#container > header div.wrapper div.hgroup h1 {display:block;*position:relative;top:-50%;font-size:52px;line-height:0.9em;margin:0;padding:0 0 1% 3%;font-weight:bold;}
-		#container > header div.wrapper hgroup h2,
-		#container > header div.wrapper div.hgroup h2 {display:block;*position:relative;top:-50%;font-size:20px;line-height:1.1em;margin:0;padding:0 0 1% 3%;font-weight:normal;}
+		#container header div.wrapper { overflow:hidden; position:relative;display:table;}
+		#container header div.wrapper figure,
+		#container header div.wrapper div.figure {display:table-cell;*position:absolute;top:50%;width:33.33333%;vertical-align:middle;}
+		#container header div.wrapper figure img,
+		#container header div.wrapper div.figure img {display:block;*position:relative;top:-50%;margin:0;padding:0;width:100%;}
+		#container header div.wrapper hgroup,
+		#container header div.wrapper div.hgroup { display:table-cell;*position:absolute;top:50%;width:66.66666%;text-align:left;vertical-align:middle;}
+		#container header div.wrapper hgroup h1,
+		#container header div.wrapper div.hgroup h1 {display:block;*position:relative;top:-50%;font-size:52px;line-height:0.9em;margin:0;padding:0 0 1% 3%;font-weight:bold;}
+		#container header div.wrapper hgroup h2,
+		#container header div.wrapper div.hgroup h2 {display:block;*position:relative;top:-50%;font-size:20px;line-height:1.1em;margin:0;padding:0 0 1% 3%;font-weight:normal;}
+	
+		#container > section {padding:2% 0 10% 0;min-height:75%;}
+		#container section div#content.left {float:left;width:48%;margin:1% 1% 1% 10%;}
+		#container section div#content.left figure,
+		#container section div#content.left div.figure {margin:0 0 32px 0;}
+		#container section div#content.left figure img,
+		#container section div#content.left div.figure img {width:100%;}
+		#container section div#content.left ul { list-style:none;padding:0 20px 0 0;}
+		#container section div#content.left ul li { margin:0 0 16px 0; }
+		#container section div#content.left ul li h3 { font-size:20px; padding:0 0 8px 0;}
+		#container section div#content.left ul li p { font-size:16px; }
+		
+		#container section div#conversion.right {display:block;margin:1%;float:right; width:38%; }
+		
+		#container section div.socialfloating { display:block;position:absolute; top:1%; left:0; width:9%; }
+		#container section div.socialfloating iframe { margin:0; }
+		
+		
+		
+		/*area de conversao*/
+		/*#conversion header {display:block;padding:30px 30px 20px;margin:0;}
+		#conversion header h2 { display:block; padding:0; margin:0 0 10px 0; font-size:20px; font-weight:bold; text-align:left; }
+		#conversion header p { display:block; padding:0; margin:0 0 10px 0; font-size:16px; line-height:1.2em; }
+
+		#conversion section {display:block;padding:30px 30px 20px; margin:0;}
+		#conversion section p {display:block; padding:0 0 20px 0; margin:0; font-size:12px; line-height:1em; }
+		#conversion section p.notice {font-size:12px;}
+		#conversion section form {}
+		#conversion section form div.field {padding:0 0 12px 0;margin:0;}
+		#conversion section form div.field div { margin:0; }
+		#conversion section form input,
+		#conversion section form select,
+		#conversion section form textarea {vertical-align:middle;font-size:18px;padding:3px 2%;margin:0;width:96%;height:28px;line-height:20px;display:inline-block;}
+		#conversion section form label {display:block;padding:0 0 5px 0; margin:0;}
+		#conversion section form select {width:100%;height:36px;line-height:36px;}
+		#conversion section form input {}
+		#conversion section form textarea {height:104px;}
+		#conversion section form input[type=radio] + label,
+		#conversion section form input[type=radio] + label + label { display: inline; }
+		#conversion section form input[type=radio] { width: auto; display: inline; vertical-align: middle; margin: -5px 5px 0 0; }
+		#conversion section form input[type=checkbox] { float: left; display: inline-block; width: auto; margin: 0px 6px 0 0; }
+		#conversion section form input[type=checkbox] + label {width: 270px;display: inline-block;padding: 5px 0 4px 0;}
+		#conversion section form label.error { display:none !important; }
+		#conversion section form input.error,
+		#conversion section form textarea.error,
+		#conversion section form select.error { background:#FFDDDD; }*/
+		
 	}
 	
 	
 
-	#container > section {padding:24px 0 80px 0;min-height:75%;}
-	#container section div#content.left {float:left;width:48%;margin:1% 1% 1% 10%;}
-	#container section div#content.left figure,
-	#container section div#content.left div.figure {margin:0 0 32px 0;}
-	#container section div#content.left figure img,
-	#container section div#content.left div.figure img {width:100%;}
-	#container section div#content.left ul { list-style:none;padding:0 20px 0 0;}
-	#container section div#content.left ul li { margin:0 0 16px 0; }
-	#container section div#content.left ul li h3 { font-size:20px; padding:0 0 8px 0;}
-	#container section div#content.left ul li p { font-size:16px; }
+	#conversion form #error-container,
+	#conversion form input,
+	#conversion form select,
+	#conversion form textarea {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	}
+	
+	
+	#conversion div.actions input.call_button,
+	#conversion div.actions a.call_button {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	}
+	
 
-	#container section div.socialfloating { position:absolute; top:1%; left:0; width:9%; }
-	#container section div.socialfloating iframe { margin:0; }
-
-	#container section div#conversion.right {display:block;margin:1%;float:right; width:38%; }
-
-	#conversion header {display:block;padding:22px 32px 16px;margin:0;}
-	#conversion header h2 { display:block; padding:0; margin:0 0 4px 0; font-size:20px; font-weight:bold; text-align:left; }
-	#conversion header p { display:block; padding:0; margin:0 0 4px 0; font-size:16px; line-height:1.2em; }
-
-	#conversion section {display:block;padding:16px 32px 8px; margin:0;}
-	#conversion section p {display:block; padding:0 0 16px 0; margin:0; font-size:12px; line-height:1em; }
-	#conversion section p.notice {font-size:12px;}
-	#conversion section form {}
-	#conversion section form div.field {padding:0 0 12px 0;margin:0;}
-	#conversion section form div.field div { margin:0; }
-	#conversion section form input,
-	#conversion section form select,
-	#conversion section form textarea {vertical-align:middle;font-size:18px;padding:3px 6px;margin:0;width:282px;height:28px;line-height:20px;display:inline-block;}
-	#conversion section form label {display:block;padding:0 0 4px 0; margin:0;}
-	#conversion section form select {width:294px;height:36px;line-height:36px;}
-	#conversion section form input {}
-	#conversion section form textarea {height:104px;}
-	#conversion section form input[type=radio] + label,
-	#conversion section form input[type=radio] + label + label { display: inline; }
-	#conversion section form input[type=radio] { width: auto; display: inline; vertical-align: middle; margin: -5px 5px 0 0; }
-	#conversion section form input[type=checkbox] { float: left; display: inline-block; width: auto; margin: 0px 6px 0 0; }
-	#conversion section form input[type=checkbox] + label {width: 270px;display: inline-block;padding: 5px 0 4px 0;}
-	#conversion section form label.error { display:none !important; }
-	#conversion section form input.error,
-	#conversion section form textarea.error,
-	#conversion section form select.error { background:#FFDDDD; }
+	
 
 
 	#conversion section div.actions { text-align:center; padding:16px 0 8px 0; }
@@ -154,36 +254,7 @@
 	#conversion section div#pay-area p {color:#333333; }
 	#conversion section form p.notice {color:#333333;}
 
-	/*border radius*/
-	#conversion {
-	-webkit-border-radius:15px;
-	-moz-border-radius:15px;
-	border-radius:15px;
-	}
-	#conversion header {
-	-webkit-border-radius:15px 15px 0px 0px;
-	-moz-border-radius:15px 15px 0px 0px;
-	border-radius:15px 15px 0px 0px;
-	}
-	#conversion section {
-	-webkit-border-radius:0px 0px 15px 15px;
-	-moz-border-radius:0px 0px 15px 15px;
-	border-radius:0px 0px 15px 15px;
-	}
-	#conversion form #error-container,
-	#conversion form input,
-	#conversion form select,
-	#conversion form textarea {
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	}
-	#conversion div.actions input.call_button,
-	#conversion div.actions a.call_button {
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
-	}
+
 
 	/*box shadow*/
 	#container > section {
@@ -230,7 +301,7 @@
 	<header>
 		<div class="wrapper">
 			<figure>
-				<img src="https://rdstation-static.s3.amazonaws.com/images/landing_page/4797/company-logo.jpg" alt="Logo" />
+				<%= image_tag 'company-logo.jpg' %>
 			</figure>
 			<hgroup>
 				<h1>Título da Sua Oferta</h1>
@@ -243,7 +314,7 @@
 		<div class="wrapper">
 			<div id="content" class="left">
 				<figure>
-					<img src="https://rdstation-static.s3.amazonaws.com/images/landing_page/4797/offer-logo.png" alt="Imagem" />
+					<%= image_tag 'offer-logo.png' %>
 				</figure>
 				<ul>
 					<li>
@@ -335,7 +406,31 @@
 						</textarea>
 						</div>
 						<div class="field">
-						<label for="Grupo_de_escolha:">Grupo de escolha:</label><div><input id="grupo-de-escolha__opo_1" name="grupo-de-escolha" type="radio" value="Opção 1" /><label>Opção 1</label></div><div><input id="grupo-de-escolha__opo_2" name="grupo-de-escolha" type="radio" value="Opção 2" /><label>Opção 2</label></div><div><input id="grupo-de-escolha__opo_3_opo_3_opo_3_opo_3_opo_3_opo_3_opo_3" name="grupo-de-escolha" type="radio" value="Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3" /><label>Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3</label></div>
+							<label for="Grupo_de_escolha:">Grupo de escolha:</label>
+							<div>
+								<input id="grupo-de-escolha__opo_1" name="grupo-de-escolha" type="radio" value="Opção 1" />
+								<label>Opção 1</label>
+							</div>
+							<div>
+								<input id="grupo-de-escolha__opo_2" name="grupo-de-escolha" type="radio" value="Opção 2" />
+								<label>Opção 2</label>
+							</div>
+							<div>
+								<input id="grupo-de-escolha__opo_3_opo_3_opo_3_opo_3_opo_3_opo_3_opo_3" name="grupo-de-escolha" type="radio" value="Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3" />
+								<label>Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3</label>
+							</div>
+							<div>
+								<input id="grupo-de-escolha__opo_1" name="grupo-de-escolha" type="radio" value="Opção 1" />
+								<label>Opção 1</label>
+							</div>
+							<div>
+								<input id="grupo-de-escolha__opo_2" name="grupo-de-escolha" type="radio" value="Opção 2" />
+								<label>Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2 Opção 2</label>
+							</div>
+							<div>
+								<input id="grupo-de-escolha__opo_3_opo_3_opo_3_opo_3_opo_3_opo_3_opo_3" name="grupo-de-escolha" type="radio" value="Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3" />
+								<label>Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3 Opção 3</label>
+							</div>
 						</div>
 
 						<div class="field">
