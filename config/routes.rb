@@ -61,6 +61,11 @@ Oxys::Application.routes.draw do
   resources :gvt, :defaults => {:format => "svg"} do
     resource :index
   end
+  
+  get 'rdstation/lp-responsive' => 'rdstation#lp_responsive', as: :rdstation_lp_responsive
+
+  
+  
 #   
 #   resources :projects do
 #     resource :release_burn_down_chart  
