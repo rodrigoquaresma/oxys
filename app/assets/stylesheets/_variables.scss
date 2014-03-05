@@ -9,11 +9,11 @@
 //// Grays
 //// -------------------------
 //
-//$gray-darker:            lighten(#000, 13.5%) !default; // #222
-//$gray-dark:              lighten(#000, 20%) !default;   // #333
-//$gray:                   lighten(#000, 33.5%) !default; // #555
-//$gray-light:             lighten(#000, 60%) !default;   // #999
-//$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 //
 //// Brand colors
 //// -------------------------
@@ -352,9 +352,9 @@ $font-size-base:          14px !default;
 //// Jumbotron
 //// -------------------------
 //
-//$jumbotron-padding:              30px !default;
-//$jumbotron-color:                inherit !default;
-//$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-padding:              30px !default;
+$jumbotron-color:                $gray-lighter;
+$jumbotron-bg:                   $gray-darker !default;
 //
 //$jumbotron-heading-color:        inherit !default;
 //
