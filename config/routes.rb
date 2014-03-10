@@ -64,7 +64,7 @@ Oxys::Application.routes.draw do
   
   get 'rdstation/lp-responsive' => 'rdstation#lp_responsive', as: :rdstation_lp_responsive
 
-  
+  get '/contact' => 'site#contact'  
   
 #   
 #   resources :projects do

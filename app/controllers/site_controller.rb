@@ -5,5 +5,9 @@ class SiteController < ApplicationController
     # @title = "oxys design de experiencia"
     # render "index", :layout => "index"
   end
+  
+  def contact
+    
+  end
 
 end
