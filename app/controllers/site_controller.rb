@@ -2,12 +2,12 @@
 class SiteController < ApplicationController
 
   def index
-    # @title = "oxys design de experiencia"
-    # render "index", :layout => "index"
   end
   
   def contact
-    
+  end
+  
+  def thankyou
   end
 
 end

@@ -74,13 +74,24 @@
 	h2 {
 		font-size:2em;
 	}
+	h3 {
+		color:#8FCCB8;
+	}
 	form {
 		padding:3em 0;
+	}
+	label.error {
+		color:#CC299A;
+		padding:.5em 0 1em;
+	}
+	.tks {
+		font-size:6em;
+		font-weight:100;
 	}
 }
 
 
 
-footer {
+#footer {
 	margin-bottom:30px;
 }

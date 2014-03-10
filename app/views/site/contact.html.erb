@@ -11,27 +11,42 @@
 				</div>
 			</div>
 			<div class="col-sm-8 col-md-6 col-md-offset-1">
-				<form role="form">
+				<h3>talk to Us.</h3>
+				<form role="form" id="conversion-form" action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
+				  <input type="hidden" name="token_rdstation" value="f673c9314b3540bc10a4f6d4ee17d160" />
+				  <input type="hidden" name="identificador" value="contact-page" />
 				  <div class="form-group">
-				    <label for="name">name</label>
-				    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+				    <label for="nome">name</label>
+				    <input name="nome" id="nome" type="text" class="form-control required" placeholder="Enter your name">
 				  </div>
 				  <div class="form-group">
 				    <label for="email">email address</label>
-				    <input type="email" class="form-control" id="email" placeholder="Enter email">
+				    <input name="email" id="email" type="email" class="form-control required" placeholder="Enter email">
 				  </div>
 				  <div class="form-group">
-				    <label for="name">company</label>
-				    <input type="text" class="form-control" id="company" placeholder="your company">
+				    <label for="empresa">company</label>
+				    <input name="empresa" id="empresa" type="text" class="form-control" placeholder="your company">
 				  </div>
 				  <div class="form-group">
-				    <label for="name">your message</label>
-				    <textarea class="form-control" rows="3"></textarea>
+				    <label for="message">message</label>
+				    <textarea name="message" id="message" class="form-control required" rows="3"></textarea>
 				  </div>
-				  
 				  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="//rdstation-static.s3.amazonaws.com/js/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script type="text/javascript" src="//rdstation-static.s3.amazonaws.com/js/jquery.form/2.02/jquery.form.js"></script>
+<script type="text/javascript" src="//rdstation-static.s3.amazonaws.com/js/rd/1.2/rdlps.min.js"></script>
+<script type="text/javascript">
+  var origConversionSuccess = conversionSuccess;
+  conversionSuccess = function(resp) {
+    origConversionSuccess(resp);
+    try { _gaq.push(['_trackPageview', '/thankyou']); } catch(err) { }
+    location.href = 'http://www.oxys.com.br';
+  }
+</script>
