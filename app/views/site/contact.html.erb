@@ -2,7 +2,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<p><%= link_to("back", :root, :class => "btn btn-default") %></p>
+				<p>
+					<%= link_to(:root) do %>
+						<i class="icon-arrow-right"></i> back to home
+					<% end %>
+				</p>
 				<h1>oxys</h1>
 				<h2>interaction design consultancy</h2>
 				<p class="lead">working to get great results</p>
