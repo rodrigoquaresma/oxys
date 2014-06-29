@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<%= render :partial => 'layouts/header' %>
-<%= yield :head %>
+  <title>Oxys2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 </head>
 <body>
-<%= yield :content %>
+
 <%= yield %>
-<%= render :partial => 'layouts/footer' %>
-<%= yield :footer %>
+
 </body>
 </html>
