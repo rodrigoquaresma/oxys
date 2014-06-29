@@ -1,4 +1,4 @@
-Oxys::Application.routes.draw do
+Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +39,7 @@ Oxys::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
@@ -53,23 +53,10 @@ Oxys::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  
+
   root 'site#index'
-    
-  get 'gvt/minhas-ligacoes' => 'gvt#minhas_ligacoes', as: :gvt_minhas_ligacoes
-  
-  resources :gvt, :defaults => {:format => "svg"} do
-    resource :index
-  end
-  
-  get 'rdstation/lp-responsive' => 'rdstation#lp_responsive', as: :rdstation_lp_responsive
 
-  get '/contact' => 'site#contact'  
-  get '/thankyou' => 'site#thankyou'  
+  get '/contact' => 'site#contact'
+  get '/thankyou' => 'site#thankyou'
 
-#   
-#   resources :projects do
-#     resource :release_burn_down_chart  
-#   end 
-  
 end
