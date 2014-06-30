@@ -56,7 +56,7 @@ Rails.application.routes.draw do
 
   root 'site#index'
 
-  get '/contact' => 'site#contact'
-  get '/thankyou' => 'site#thankyou'
+  get 'contact' => 'site#contact'
+  get 'thankyou' => 'site#thankyou'
 
 end
