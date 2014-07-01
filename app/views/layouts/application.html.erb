@@ -4,7 +4,7 @@
 <%= render :partial => 'layouts/header' %>
 <%= yield :head %>
 </head>
-<body>
+<body data-no-turbolink>
 <%= yield :content %>
 <%= yield %>
 <%= render :partial => 'layouts/footer' %>
