@@ -5,6 +5,7 @@
 <%= yield :head %>
 </head>
 <body data-no-turbolink>
+<%= render :partial => 'layouts/lead_tracking' %>
 <%= yield :content %>
 <%= yield %>
 <%= render :partial => 'layouts/footer' %>
