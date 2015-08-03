@@ -5,7 +5,10 @@
 <%= yield :head %>
 </head>
 <body data-no-turbolink>
+<% if Rails.env.production? %>
+<%= render :partial => 'layouts/google_tag_manager' %>
 <%= render :partial => 'layouts/lead_tracking' %>
+<% end %>
 <%= yield :content %>
 <%= yield %>
 <%= render :partial => 'layouts/footer' %>
